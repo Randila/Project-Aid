@@ -21,6 +21,19 @@ body {
     position: relative;
 }
 
+.logoDiv {
+    position: absolute;
+    left: 87.5%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background-image: url("src/logo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10%;
+    width: 20%;
+    z-index: 2;
+}
+
 .insideUpper {
     height: 60%;
     width: 100%;
