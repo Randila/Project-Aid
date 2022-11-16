@@ -33,7 +33,7 @@ body {
 .content {
     margin-left: 13%;
     border: 2px solid red;
-    width: 87%;
+    width: 72%;
     height: 100%;
 }
 
@@ -63,4 +63,15 @@ button {
     background-color: yellow;
     height: 100%;
     width: 100%;
+}
+
+.rightDiv {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translate(0%, 0%);
+    background-color: green;
+    border: 1px solid blue;
 }
