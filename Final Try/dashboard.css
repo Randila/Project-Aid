@@ -40,3 +40,27 @@ body {
 button {
     border: none;
 }
+
+.catOne {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+.catTwo {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+.catThree {
+    background-color: green;
+    height: 100%;
+    width: 100%;
+}
+
+.catFour {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+}

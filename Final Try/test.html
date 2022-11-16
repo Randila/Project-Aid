@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
-
+<!-- <script>
+    function testFunction() {
+        var bonk = document.getElementById("first").textContent
+        console.log(bonk);
+        alert(bonk);
+        console.log(bonk.length);
+    }
+</script> -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         /* Style the buttons */
+        
+        body {
+            padding: 0;
+        }
         
         .sidebar {
             width: 13%;
@@ -23,15 +34,14 @@
             color: black;
             text-decoration: none;
         }
-        
-        .btn {
+        /* .btn {
             border: none;
             outline: none;
             padding: 10px 16px;
             background-color: #f1f1f1;
             cursor: pointer;
             font-size: 18px;
-        }
+        } */
         /* Style the active class, and buttons on mouse-over */
         
         .active,
@@ -39,21 +49,29 @@
             background-color: #666;
             color: white;
         }
+        
+        .content {
+            margin-left: 13%;
+            border: 2px solid red;
+            height: 100%;
+            width: 87%;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Active Button</h1>
-    <p>Highlight the active/current (pressed) button.</p>
+
 
     <div id="myDIV" class="sidebar">
-        <button class="btn">1</button>
-        <button class="btn active">2</button>
-        <button class="btn">3</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
+        <button class="btn" id="first" name="first">1</button>
+
+        <button class="btn active" id="second">2</button>
+        <button class="btn" id="third">3</button>
+        <button class="btn" id="fourth">4</button>
+        <button class="btn" id="five">5</button>
     </div>
+    <div class="content"></div>
 
     <script>
         // Add active class to the current button (highlight it)
@@ -66,11 +84,15 @@
                 current[0].className = current[0].className.replace(" active", "");
                 this.className += " active";
                 console.log("Current after is : ", current[0]);
-
+                var test = document.getElementById(this.id).textContent
+                console.log("id is :", this.id);
                 console.log(this.className);
+                console.log(test);
+
             });
         }
     </script>
+
 
 </body>
 
