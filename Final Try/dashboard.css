@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.sidebar {
+    width: 13%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.sidebar a {
+    display: block;
+    padding: 16%;
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: green;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.content {
+    margin-left: 13%;
+    border: 2px solid red;
+    width: 87%;
+    height: 100%;
+}
