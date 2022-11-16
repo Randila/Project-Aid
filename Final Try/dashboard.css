@@ -13,19 +13,19 @@ body {
     position: fixed;
 }
 
-.sidebar a {
+.sidebar * {
     display: block;
     padding: 16%;
     color: black;
     text-decoration: none;
 }
 
-.sidebar a.active {
+.sidebar *.active {
     background-color: green;
     color: white;
 }
 
-.sidebar a:hover:not(.active) {
+.sidebar *:hover:not(.active) {
     background-color: #555;
     color: white;
 }
@@ -35,4 +35,8 @@ body {
     border: 2px solid red;
     width: 87%;
     height: 100%;
+}
+
+button {
+    border: none;
 }
