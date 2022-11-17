@@ -1,9 +1,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="dashboard.css">
 
 
@@ -22,19 +23,98 @@
 <body>
     <div id="myDIV" class="sidebar">
         <p class="slideSelect active" id="Home">Home</p>
-        <p class="slideSelect" id="News">News</p>
-        <p class="slideSelect" id="Doctor">Doctor</p>
-        <p class="slideSelect" id="Nurse">Nurse</p>
-        <button onclick="bonk()">hooooo</button>
-        <p class="slideSelect" id="test" style="display: none;">Dissapear</p>
+        <p class="slideSelect" id="Manage Patient">Manage Patient</p>
+        <p class="slideSelect" id="Manage Staff">Manage Staff</p>
+        <p class="slideSelect" id="Billing">Billing</p>
+        <p class="slideSelect" id="Appointments">Appointments</p>
+        <p class="slideSelect" id="Inventory">Inventory</p>
+        <p class="slideSelect" id="Monthly Reports">Monthly Reports</p>
     </div>
     <div id="contentDiv" class="content">
-        <div class="catOne" style="display: none;" id="Homediv"> </div>
-        <div class="catTwo" style="display: none;" id="Newsdiv"></div>
-        <div class="catThree" style="display: none;" id="Doctordiv" name="test" value="boooo"></div>
-        <div class="catFour" style="display: none;" id="Nursediv"></div>
+        <div class="catTwo" style="display: block;" id="Homediv">
+            <div class="tileHolder">
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/appointments.png');"></div>
+                    <div class="test">
+                        <p>
+                            Appointments
+                        </p>
+                        <p>
+                            18
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/patient.png');"></div>
+                    <div class="test">
+                        <p>
+                            Patients
+                        </p>
+                        <p>
+                            1000
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image:url('src/delete.png');"></div>
+                    <div class="test">
+                        <p>
+                            Delete Requests
+                        </p>
+                        <p>
+                            10
+                        </p>
+                    </div>
+                </div>
+                <div class="homeTile">
+                    <div class="tileinner" style="background-image: url('src/medical\ staff.png');">
+                    </div>
+                    <div class="test">
+                        <p>
+                            Total Medical Staff
+                        </p>
+                        <p>
+                            99
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="catTwo" style="display: none;" id="Manage Patientdiv">
+            <p>Patient</p>
+        </div>
+        <div class="catTwo" style="display: none;" id="Manage Staffdiv">
+            <p>staff</p>
+        </div>
+        <div class="catTwo" style="display: none;" id="Billingdiv">
+            <p>Bill</p>
+        </div>
+        <div class="catTwo" style="display: none;" id="Appointmentsdiv">
+            <p>APPOIN</p>
+        </div>
+        <div class="catTwo" style="display: none;" id="Inventorydiv">
+            <p>Inven</p>
+        </div>
+        <div class="catTwo" style="display: none;" id="Monthly Reportsdiv">
+            <p>Monthly Rep</p>
+        </div>
+
+
     </div>
     <div class="rightDiv ">
+        <div class="userImg">
+
+        </div>
+        <p>
+            Dr.Saveen Malinga
+        </p>
+        <p>
+            DoctorID:69
+        </p>
+        <button id="logout">   
+            Logout         
+        </button>
 
     </div>
 

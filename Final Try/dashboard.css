@@ -6,7 +6,7 @@ body {
 .sidebar {
     width: 13%;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: rgb(48, 47, 63);
     border: 1px solid black;
     margin: 0;
     padding: 0;
@@ -15,19 +15,22 @@ body {
 
 .sidebar * {
     display: block;
-    padding: 16%;
-    color: black;
+    padding: 3%;
+    color: white;
     text-decoration: none;
+    text-indent: 1vw;
 }
 
 .sidebar *.active {
-    background-color: green;
-    color: white;
+    background-color: rgb(173, 239, 209);
+    color: black;
+    padding: 16%;
 }
 
 .sidebar *:hover:not(.active) {
     background-color: #555;
     color: white;
+    padding: 10%;
 }
 
 .content {
@@ -35,10 +38,7 @@ body {
     border: 2px solid red;
     width: 72%;
     height: 100%;
-}
-
-button {
-    border: none;
+    /* padding-top: 10%; */
 }
 
 .catOne {
@@ -48,9 +48,11 @@ button {
 }
 
 .catTwo {
-    background-color: blue;
+    background-color: rgb(214, 218, 229);
     height: 100%;
     width: 100%;
+    padding-top: 5vh;
+    padding: 2vh;
 }
 
 .catThree {
@@ -72,6 +74,84 @@ button {
     top: 0%;
     left: 85%;
     transform: translate(0%, 0%);
-    background-color: green;
-    border: 1px solid blue;
+    background-color: rgb(48, 47, 63);
+}
+
+.userImg {
+    /* border: 4px solid white; */
+    width: 80%;
+    min-height: 20%;
+    max-height: fit-content;
+    margin: auto;
+    margin-top: 10%;
+    background-image: url("src/userimage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.rightDiv p {
+    color: white;
+    display: block;
+    /* margin-left: 50%;
+    transform: translate(-50%); */
+    text-indent: 2vh;
+    padding: 2vh;
+}
+
+.rightDiv button {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    border: none;
+}
+
+.tileHolder {
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    /* contain: content; */
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.homeTile {
+    /* border: 1px solid black; */
+    width: 20%;
+    height: 100%;
+    /* margin-left: 1%; */
+    margin-inline: 2%;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    border-radius: 5vh;
+    box-shadow: 0.5vh 1vh 10px rgb(48, 47, 63);
+}
+
+.tileinner {
+    height: 100%;
+    width: 30%;
+    margin-left: 1vh;
+    /* background-image: url("src/appointments.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.test {
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    contain: content;
+    padding-top: 10%;
+}
+
+.test p {
+    display: block;
+    font-size: 2vh;
+    margin-bottom: 1vh;
 }
