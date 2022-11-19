@@ -1,101 +1,29 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="calendar.css">
-<script src="calendar.js"></script>
+
 <html>
-<!-- <script>
-    function testFunction() {
-        var bonk = document.getElementById("first").textContent
-        console.log(bonk);
-        alert(bonk);
-        console.log(bonk.length);
-    }
-</script> -->
+
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
-        /* Style the buttons */
-        
-        body {
-            padding: 0;
-        }
-        
-        .sidebar {
-            width: 13%;
+        .leftDiv {
+            width: 20%;
             height: 100%;
-            background-color: #f1f1f1;
-            border: 1px solid black;
-            margin: 0;
-            padding: 0;
-            position: fixed;
-        }
-        
-        .sidebar * {
-            display: block;
-            padding: 16%;
-            color: black;
-            text-decoration: none;
-        }
-        /* .btn {
-            border: none;
-            outline: none;
-            padding: 10px 16px;
-            background-color: #f1f1f1;
-            cursor: pointer;
-            font-size: 18px;
-        } */
-        /* Style the active class, and buttons on mouse-over */
-        
-        .active,
-        .btn:hover {
-            background-color: #666;
-            color: white;
-        }
-        
-        .content {
-            margin-left: 13%;
             border: 2px solid red;
-            height: 100%;
-            width: 87%;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="calendar"></div>
-
-
-    <!-- <div id="myDIV" class="sidebar">
-        <button class="btn" id="first" name="first">1</button>
-
-        <button class="btn active" id="second">2</button>
-        <button class="btn" id="third">3</button>
-        <button class="btn" id="fourth">4</button>
-        <button class="btn" id="five">5</button>
+    <div class="leftDiv">
+        test
     </div>
-    <div class="content"></div>
 
-    <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                console.log("current before is :", current[0]);
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-                console.log("Current after is : ", current[0]);
-                var test = document.getElementById(this.id).textContent
-                console.log("id is :", this.id);
-                console.log(this.className);
-                console.log(test);
 
-            });
-        }
-    </script> -->
+
+
 
 
 </body>

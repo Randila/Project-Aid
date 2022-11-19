@@ -155,3 +155,49 @@ body {
     font-size: 2vh;
     margin-bottom: 1vh;
 }
+
+.appointmentListdiv {
+    background-color: rgb(213, 214, 219);
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    margin-top: 10%;
+    contain: content;
+}
+
+.appointmentsTable {
+    margin: auto;
+    width: 95%;
+    /* height: 100%; */
+    /* background-color: #555; */
+}
+
+.appointmentsTable td {
+    text-indent: 2%;
+    width: 20%;
+    height: 10vh;
+    background-color: rgb(171, 174, 183);
+}
+
+.appointmentsTable th {
+    height: 5vh;
+    width: 20%;
+}
+
+.appointmentTile {
+    display: block;
+    margin-block-start: 1vh;
+}
+
+.patientImg {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid rgb(98, 246, 8);
+    margin: 1%;
+}
+
+.appointmentsTable p {
+    display: inline;
+}
