@@ -21,7 +21,8 @@
             right: 0%;
         }
         
-        .butt {
+        .butt,
+        input {
             display: block;
             width: 50%;
             padding: 20px;
@@ -64,6 +65,10 @@
         <button class="butt" id="btn2">
             Switch3
         </button>
+        <input type="text" id="search">
+        <p id="demo">
+            test
+        </p>
     </div>
     <div class="rightdiv">
         <div class="insidediv"></div>
@@ -71,10 +76,17 @@
     </div>
 </body>
 <script>
-    var test = document.getElementById("btn1");
-    test.addEventListener("click", function() {
-        alert("test");
-    });
+    // var test = document.getElementById("btn1");
+    // test.addEventListener("click", function() {
+    //     alert("test");
+    // });
+
+    // var input = document.getElementById("search");
+    // var x = input.textContent
+    // input.addEventListener("keydown", function() {
+    //     alert(x);
+    //     document.getElementById("demo").innerHTML = input;
+    // });
 </script>
 
 </html>

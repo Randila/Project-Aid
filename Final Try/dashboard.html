@@ -82,7 +82,7 @@
 
             <div class="appointmentListdiv">
                 <table border="0" class="appointmentsTable">
-                    <!-- <caption>Appointments List</caption> -->
+
                     <tr>
                         <th>
                             Appointments List
@@ -102,7 +102,7 @@
                             </td>
                             <td>
                                 <img src="src/userimage.png" alt="" class="patientImg">
-                                <!-- <p>Randila Senath</p> -->
+
                                 <p>Randila Senath </p>
                             </td>
                             <td>
@@ -120,7 +120,7 @@
                             </td>
                             <td>
                                 <img src="src/userimage.png" alt="" class="patientImg">
-                                <!-- <p>Randila Senath</p> -->
+
                                 <p>Chathushi Gunapala </p>
                             </td>
                             <td>
@@ -138,7 +138,7 @@
                             </td>
                             <td>
                                 <img src="src/userimage.png" alt="" class="patientImg">
-                                <!-- <p>Dinithi Abeysuriya</p> -->
+
                                 <p>Dinithi Abeysuriya </p>
                             </td>
                             <td>
@@ -260,24 +260,64 @@
 </script>
 
 <script>
+    // function divFunc(divId) {
+    //     var div = divId.concat("div");
+    //     var main = document.getElementById("contentDiv");
+    //     var innerArr = main.getElementsByTagName("div");
+    //     // console.log("forwareded value :", div);
+    //     for (var i = 0; i < innerArr.length; i++) {
+    //         console.log("array value :", innerArr[i]);
+
+    //         if (innerArr[i].id == div) {
+    //             // console.log("Matching pair is :", innerArr[i]);
+    //             // console.log("And :", div);
+    //             document.getElementById(innerArr[i].id).style.display = "block";
+    //             // var x = document.getElementById(div);
+    //             // x.style.display = "block";
+    //         } else {
+    //             document.getElementById(innerArr[i].id).style.display = "none";
+    //         }
+
+    //     }
+
+
+    // }
+</script>
+
+<script>
     function divFunc(divId) {
+        var divArray = ["Homediv", "Manage Patientdiv", "Manage Staffdiv", "Billingdiv", "Appointmentsdiv", "Inventorydiv", "Monthly Reportsdiv"];
         var div = divId.concat("div");
-        var main = document.getElementById("contentDiv");
-        var innerArr = main.getElementsByTagName("div");
-        for (var i = 0; i < innerArr.length; i++) {
-            // console.log(innerArr[i].id);
-            if (innerArr[i].id == div) {
-                // console.log("Matching pair is :", innerArr[i]);
-                // console.log("And :", div);
-                document.getElementById(innerArr[i].id).style.display = "block";
-                // var x = document.getElementById(div);
-                // x.style.display = "block";
-            } else {
-                document.getElementById(innerArr[i].id).style.display = "none";
+        document.getElementById(div).style.display = "block";
+        for (var i = 0; i < divArray.length; i++) {
+            if (divArray[i] != div) {
+                document.getElementById(divArray[i]).style.display = "none";
             }
 
         }
     }
+</script>
+
+
+<script>
+    // function divFunc(divId) {
+    //     const divArray = ["Homediv", "Manage Patientdiv", "Manage Staffdiv", "Billingdiv", "Appointmentsdiv", "Inventorydiv", "Monthly Reportsdiv"];
+    //     var div = divId.concat("div");
+
+    //     console.log("div is : ", div);
+
+    //     for (var i = 0; i < divArray.length; i++) {
+    //         if (divArray[i] == div) {
+    //             document.getElementById(divArray[i]).style.display = "block";
+    //             console.log("success :", div);
+    //         } else {
+    //             document.getElementById(div).style.display = "none";
+    //             console.log("fail");
+    //         }
+
+    //     }
+
+    // }
 </script>
 
 <script>
