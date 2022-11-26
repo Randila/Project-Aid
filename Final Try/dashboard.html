@@ -234,10 +234,10 @@
 
                     <!-- START OF DINITHI'S CODE -->
                     <div class="innerAddPatient">
-                        <div class="tileHolder3">
+                        <!-- <div class="tileHolder3">
                             <button class="tablinks active" onclick="openInfo(event, 'AddPatient1')">Profile Details</button>
                             <button class="tablinks" onclick="openInfo(event, 'AddPatient2')">Other Details</button>
-                        </div>
+                        </div> -->
                         <div class="tabContent" id="AddPatient1">
                             <form action="">
                                 <table border="0" class="addStaffProfileDetailsTable">
@@ -290,77 +290,13 @@
                                     <tr>
                                         <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="City"></td>
                                         <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="State/Province"></td>
-
-
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <input type="submit" value="Admit Patient">
+                                        </td>
                                     </tr>
                                 </table>
-
-                        </div>
-                        <div class="tabContent" id="AddPatient2" style="display: none;">
-                            <table class="addStaffProfileDetailsTable" border="0">
-                                <tr>
-                                    <th>
-                                        <p>Staff Picture</p>
-                                        </td>
-                                        <td colspan="3">
-                                            <input type="file" name="uploadfile" value="" />
-                                        </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Qualifications</p>
-                                    </td>
-                                    <td colspan="2"><textarea name="txtQualification" id="" cols="1" rows="5"></textarea></td>
-
-
-                                </tr>
-                                <tr>
-
-                                    <td>Department</td>
-                                    <td colspan="2">
-                                        <select name="department" id="department">
-                                            <option value="Outpatient department (OPD)">Outpatient department (OPD)</option>
-                                            <option value="Inpatient Service (IP)"> Inpatient Service (IP)</option>
-                                            <option value="Medical Department">Medical Department</option>
-                                            <option value="Nursing Department"> Nursing Department</option>
-                                            <option value="Paramedical Department">Paramedical Department</option>
-                                            <option value="Physical Medicine">Physical Medicine</option>
-                                            <option value="Operation Theatre Complex (OT)">Operation Theatre Complex (OT)</option>
-                                            <option value="Inpatient Service (IP)"> Inpatient Service (IP)</option>
-                                        </select>
-
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Experience</p>
-                                    </td>
-                                    <td> <input type="text" name="txtExperience" autocomplete="on" required></td>
-
-
-                                    <td>Employee Type</td>
-                                    <td>
-                                        <select name="department" id="department">
-                                        <option value="Nurses">Nurses</option>
-                                        <option value="Physicians"> Physicians</option>
-                                        <option value="Pharmacists">Pharmacists</option>
-                                        <option value="Doctor">Doctor</option>
-                                        </select>
-
-                                    </td>
-
-
-                                </tr>
-                                <tr>
-                                    <td colspan="4">
-                                        <input type="submit" value="Add Staff Member">
-                                    </td>
-                                </tr>
-
-
-                            </table>
                         </div>
                         </form>
 
@@ -788,7 +724,194 @@
             <p>Bill</p>
         </div>
         <div class="catTwo" style="display: none;" id="Appointmentsdiv">
-            <p>APPOIN</p>
+            <div class="tileHolder2">
+                <div class="homeTile TileCenter">
+                    <p class="TileText">Add Appointments</p>
+                </div>
+            </div>
+            <div class="appointmentListdiv">
+                <table border="0" class="appointmentsTable">
+
+                    <tr>
+                        <th>
+                            Appointments List
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Doctor</th>
+                    </tr>
+                </table>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Randila Senath </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Chathushi Gunapala </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Dilasha Tharindi</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="appointmentTile">
+                    <table border="0" class="appointmentsTable">
+                        <tr>
+                            <td>
+                                <p>19th Nov 2022</p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+
+                                <p>Dinithi Abeysuriya </p>
+                            </td>
+                            <td>
+                                <img src="src/userimage.png" alt="" class="patientImg">
+                                <p>Saveen Malinga</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="addStaffWindow" id="addAppointmentWindowPop" style="width: 80%;">
+                <div class="addStaffInner" id="insideAddStaff" style="display: none;">
+                    <i class="fa fa-close closebtn" id="addStaffClosebtn" style="display: none;"></i>
+                    <table border="0" class="addStaffProfileDetailsTable">
+                        <tr>
+                            <!--Next Row-->
+                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="First Name"></td>
+                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="Last Name"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Birth Date</p>
+                            </td>
+                            <td> <input type="date" name="b_day" autocomplete="on" required></td>
+                            <td>
+                                <p>Gender</p>
+                            </td>
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input id="nic" type="text" name="nic" autocomplete="on" required placeholder="NIC">
+                            </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input id="phone" type="text" name="phone" autocomplete="on" required placeholder="mobile number">
+                            </td>
+                            <td colspan="2">
+                                <input id="email" type="email" name="email" autocomplete="on" required placeholder="email address">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Current Address</p>
+                            </td>
+                            <td colspan="3"> <textarea name="txtAddress" id="" cols="1" rows="4" placeholder="Street Address"></textarea>
+
+                        </tr>
+                        <!--Next Row-->
+                        <tr>
+                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="City"></td>
+                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="State/Province"></td>
+
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
         <div class="catTwo" style="display: none;" id="Inventorydiv">
             <p>Inven</p>

@@ -206,6 +206,11 @@ body {
     padding-bottom: 2vh;
 }
 
+.homeTile:hover {
+    background-color: black;
+    color: white;
+}
+
 .staffList {
     /* border: 1px solid blue; */
     border-radius: 5vh 0 0 5vh;
