@@ -325,6 +325,18 @@ body {
     /* margin-left: 50%;
     transform: translate(-50%); */
     border-radius: 5vh;
+    background-image: linear-gradient(to left bottom, #eef1f7, #dfe4ef, #d1d8e6, #c3cbde, #b5bfd6);
+}
+
+.appointmentsTable select {
+    border-radius: 5vh;
+    border: none;
+    background-color: while;
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 2vh;
+    width: 100%;
 }
 
 .btnBox {
@@ -490,7 +502,7 @@ body {
 
 .addStaffProfileDetailsTable input {
     border-radius: 5vh;
-    border: none;
+    border: 1px solid rgb(129, 129, 129);
     background-color: white;
     outline: none;
     color: black;
@@ -505,7 +517,7 @@ body {
 
 .addStaffProfileDetailsTable textarea {
     border-radius: 5vh;
-    border: none;
+    border: 1px solid rgb(129, 129, 129);
     background-color: white;
     outline: none;
     color: black;
@@ -520,7 +532,7 @@ body {
 
 .addStaffProfileDetailsTable select {
     border-radius: 5vh;
-    border: none;
+    border: 1px solid rgb(129, 129, 129);
     background-color: while;
     outline: none;
     color: black;
