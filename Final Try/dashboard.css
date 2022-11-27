@@ -337,6 +337,7 @@ body {
     border-radius: 2vh;
     /* background-color: rgba(255, 255, 255, 0.9); */
     transition: 0.5s;
+    background-image: linear-gradient(to left bottom, #eef1f7, #dfe4ef, #d1d8e6, #c3cbde, #b5bfd6);
 }
 
 .addStaffInner {
@@ -509,4 +510,158 @@ body {
 
 .addStaffProfileDetailsTable input[type=submit]:hover {
     background-color: #4a4b62;
+}
+
+.tabContent2 {
+    width: 95%;
+    height: 85%;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.tabContent3 {
+    width: 95%;
+    height: 85%;
+    margin: auto;
+    margin-top: 5vh;
+    /* margin-top: 50%; */
+    /* transform: translate(-50%); */
+    /* background-color: #eef1f7; */
+    /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+    /* background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    background-image: linear-gradient(to left bottom, #eef1f7, #dfe4ef, #d1d8e6, #c3cbde, #b5bfd6);
+    position: relative;
+}
+
+.AppointmentleftHolder {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    /* background-color: rgb(48, 47, 63); */
+}
+
+.AppointmentleftHolder input {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+.AppointmentRightHolder {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+    position: absolute;
+    top: 0%;
+    right: 0%
+}
+
+.AppointmentleftBigBox {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5vh;
+    /* border: 1px solid pink; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* background-color: rgb(48, 47, 63, 0.9); */
+}
+
+.AppointmentContentBox {
+    /* border: 1px solid white; */
+    width: 100%;
+    background-color: #302f3f;
+    height: fit-content;
+    margin: auto;
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+    padding: 1vh;
+    display: block;
+    margin-block-start: 1vh;
+    border-radius: 2vh;
+}
+
+.AppointmentContentBox:hover {
+    background-color: black;
+}
+
+.AppointmentContentBox p {
+    text-align: left;
+    text-indent: 3vw;
+}
+
+.AppointmentInputTable {
+    width: 100%;
+    margin-top: 10vh;
+    /* transform: translate(-50%); */
+    /* display: flex;
+    justify-content: center; */
+    font-weight: bold;
+}
+
+.AppointmentInputTable td {
+    padding: 2vh;
+}
+
+.AppointmentInputTable input {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.AppointmentInputTable input::placeholder {
+    color: #c3cbde;
+}
+
+.AppointmentInputTable select {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: #b5bfd6;
+}
+
+.AppointmentInputTable p {
+    text-align: center;
+}
+
+.AppointmentInputTable input[type=submit] {
+    background-color: #4a4b62;
+    color: white;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 2vh;
+}
+
+.AppointmentInputTable input[type=submit]:hover {
+    background-color: #302f3f;
+    box-shadow: 0.5vh 1vh 1px rgb(214, 218, 229);
+}
+
+.AppointmentContentBox.activated {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 5vh;
 }

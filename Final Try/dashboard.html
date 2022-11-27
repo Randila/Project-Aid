@@ -218,7 +218,7 @@
         </div>
         <div class="catTwo" style="display: none;" id="Manage Patientdiv">
             <div class="tileHolder2">
-                <div class="homeTile TileCenter" id="addPatientOpenbtn">
+                <div class="homeTile TileCenter" id="addPatientOpenbtn" onclick="windowManager('addPatientWindowPop')">
                     <p class="TileText">Add Patient</p>
                 </div>
                 <div class="homeTile TileCenter">
@@ -230,7 +230,7 @@
             </div>
             <div class="addStaffWindow" id="addPatientWindowPop">
                 <div class="addStaffInner" id="insideAddPatient" style="display: none;">
-                    <i class="fa fa-close closebtn" id="addPatientClosebtn" style="display: none;"></i>
+                    <i class="fa fa-close closebtn" id="addPatientClosebtn" onclick="windowCloser('addPatientWindowPop')"></i>
 
                     <!-- START OF DINITHI'S CODE -->
                     <div class="innerAddPatient">
@@ -238,7 +238,7 @@
                             <button class="tablinks active" onclick="openInfo(event, 'AddPatient1')">Profile Details</button>
                             <button class="tablinks" onclick="openInfo(event, 'AddPatient2')">Other Details</button>
                         </div> -->
-                        <div class="tabContent" id="AddPatient1">
+                        <div class="tabContent2" id="AddPatient1">
                             <form action="">
                                 <table border="0" class="addStaffProfileDetailsTable">
                                     <tr>
@@ -441,7 +441,7 @@
                 <i class="fa fa-bars"></i>
             </button> -->
             <div class="tileHolder2">
-                <div class="homeTile TileCenter" id="addStaffOpenbtn">
+                <div class="homeTile TileCenter" id="addStaffOpenbtn" onclick="windowManager('addStaffWindowPop')">
                     <p class="TileText">Add Staff Member</p>
                 </div>
                 <div class="homeTile TileCenter">
@@ -578,7 +578,7 @@
             </div>
             <div class="addStaffWindow" id="addStaffWindowPop">
                 <div class="addStaffInner" id="insideAddStaff" style="display: none;">
-                    <i class="fa fa-close closebtn" id="addStaffClosebtn" style="display: none;"></i>
+                    <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addStaffWindowPop')"></i>
 
                     <!-- START OF DINITHI'S CODE -->
                     <div class="innerAddStaff">
@@ -725,7 +725,7 @@
         </div>
         <div class="catTwo" style="display: none;" id="Appointmentsdiv">
             <div class="tileHolder2">
-                <div class="homeTile TileCenter">
+                <div class="homeTile TileCenter" onclick="windowManager('addAppointmentWindowPop')">
                     <p class="TileText">Add Appointments</p>
                 </div>
             </div>
@@ -853,63 +853,88 @@
                 </div>
 
             </div>
-            <div class="addStaffWindow" id="addAppointmentWindowPop" style="width: 80%;">
+            <div class="addStaffWindow" id="addAppointmentWindowPop" style="height:80%; ">
                 <div class="addStaffInner" id="insideAddStaff" style="display: none;">
-                    <i class="fa fa-close closebtn" id="addStaffClosebtn" style="display: none;"></i>
-                    <table border="0" class="addStaffProfileDetailsTable">
-                        <tr>
-                            <!--Next Row-->
-                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="First Name"></td>
-                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="Last Name"></td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <p>Birth Date</p>
-                            </td>
-                            <td> <input type="date" name="b_day" autocomplete="on" required></td>
-                            <td>
-                                <p>Gender</p>
-                            </td>
-                            <td>
-                                <select name="gender" id="gender">
-                                    <option value="Female">Female</option>
-                                    <option value="Male">Male</option>
-                                
-                                </select>
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-                                <input id="nic" type="text" name="nic" autocomplete="on" required placeholder="NIC">
-                            </td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input id="phone" type="text" name="phone" autocomplete="on" required placeholder="mobile number">
-                            </td>
-                            <td colspan="2">
-                                <input id="email" type="email" name="email" autocomplete="on" required placeholder="email address">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>Current Address</p>
-                            </td>
-                            <td colspan="3"> <textarea name="txtAddress" id="" cols="1" rows="4" placeholder="Street Address"></textarea>
-
-                        </tr>
-                        <!--Next Row-->
-                        <tr>
-                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="City"></td>
-                            <td colspan="2"> <input type="text" name="txtFullName" autocomplete="on" required placeholder="State/Province"></td>
-
-
-                        </tr>
-                    </table>
+                    <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addAppointmentWindowPop')"></i>
+                    <div class="tabContent3">
+                        <div class="AppointmentleftHolder">
+                            <input type="text" placeholder="Search by patient name" id="searchBar" onkeyup="searchFunction()">
+                            <div class="AppointmentleftBigBox" id="AppointmentleftBigBox">
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Randila">Patient Name : Randila</p>
+                                    <p id="69">Patient id : 69 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Saveen">Patient Name : Saveen</p>
+                                    <p id="420">Patient id : 420 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Dilasha">Patient Name : Dilasha</p>
+                                    <p id="300">Patient id : 300 </p>
+                                </div>
+                                <div class="AppointmentContentBox">
+                                    <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                    <p id="Dinithi">Patient Name : Dinithi</p>
+                                    <p id="299">Patient id : 299 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="AppointmentRightHolder">
+                            <form action="">
+                                <table border="0" class="AppointmentInputTable">
+                                    <tr>
+                                        <td>
+                                            <input type="text" name="" id="patId" placeholder="Patient Id">
+                                        </td>
+                                        <td>
+                                            <input type="text" id="patName" placeholder="Patient Name">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Date :</p>
+                                        </td>
+                                        <td>
+                                            <input type="date">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Time :</p>
+                                        </td>
+                                        <td>
+                                            <input type="time">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Select a Doctor :</p>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" disabled selected>
+                                                    Pick a Doctor
+                                                </option>
+                                                <option value="">Randila</option>
+                                                <option value="">Saveen</option>
+                                                <option value="">Dinithi</option>
+                                                <option value="">Dilasha</option>
+                                                <option value="">Chathushi</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr aria-rowspan="2">
+                                        <td colspan="2">
+                                            <input type="submit" name="" id="" value="Add Appointment">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1023,49 +1048,75 @@
     // }
 </script>
 
-<script>
+<!-- <script>
     var closebtn = document.getElementById("closeBtn");
     closebtn.addEventListener("click", function() {
         document.getElementById("sideNavbar").style.width = "0";
     });
-</script>
+</script> -->
 
 <script>
-    var closeStaff = document.getElementById("addStaffClosebtn");
-    closeStaff.addEventListener("click", function() {
-        document.getElementById("addStaffWindowPop").style.width = "0%";
-        closeStaff.style.display = "none";
-        document.getElementById("insideAddStaff").style.display = "none";
-        document.getElementById("addStaffForm").style.display = "none";
+    // var closeStaff = document.getElementById("addStaffClosebtn");
+    // closeStaff.addEventListener("click", function() {
+    //     document.getElementById("addStaffWindowPop").style.width = "0%";
+    //     closeStaff.style.display = "none";
+    //     document.getElementById("insideAddStaff").style.display = "none";
+    //     document.getElementById("addStaffForm").style.display = "none";
 
 
-    });
+    // });
 
-    var openStaff = document.getElementById("addStaffOpenbtn");
-    openStaff.addEventListener("click", function() {
-        document.getElementById("addStaffWindowPop").style.width = "75%";
-        closeStaff.style.display = "block";
-        document.getElementById("insideAddStaff").style.display = "block";
-        document.getElementById("addStaffForm").style.display = "block";
+    // var openStaff = document.getElementById("addStaffOpenbtn");
+    // openStaff.addEventListener("click", function() {
+    //     document.getElementById("addStaffWindowPop").style.width = "75%";
+    //     closeStaff.style.display = "block";
+    //     document.getElementById("insideAddStaff").style.display = "block";
+    //     document.getElementById("addStaffForm").style.display = "block";
 
-    });
+    // });
 
-    var closePatient = document.getElementById("addPatientClosebtn");
-    var openPatient = document.getElementById("addPatientOpenbtn");
-    openPatient.addEventListener("click", function() {
-        document.getElementById("addPatientWindowPop").style.width = "75%";
-        closePatient.style.display = "block";
-        document.getElementById("insideAddPatient").style.display = "block";
-        document.getElementById("addPatientForm").style.display = "block";
+    // var closePatient = document.getElementById("addPatientClosebtn");
+    // var openPatient = document.getElementById("addPatientOpenbtn");
+    // openPatient.addEventListener("click", function() {
+    //     document.getElementById("addPatientWindowPop").style.width = "75%";
+    //     closePatient.style.display = "block";
+    //     document.getElementById("insideAddPatient").style.display = "block";
+    //     document.getElementById("addPatientForm").style.display = "block";
 
-    });
-    closePatient.addEventListener("click", function() {
-        document.getElementById("addPatientWindowPop").style.width = "0%";
-        closePatient.style.display = "none";
-        document.getElementById("insideAddPatient").style.display = "none";
-        document.getElementById("addPatientForm").style.display = "none";
+    // });
+    // closePatient.addEventListener("click", function() {
+    //     document.getElementById("addPatientWindowPop").style.width = "0%";
+    //     closePatient.style.display = "none";
+    //     document.getElementById("insideAddPatient").style.display = "none";
+    //     document.getElementById("addPatientForm").style.display = "none";
 
-    });
+    // });
+    function windowManager(windowId) {
+        var windows, i, j, everyInner;
+
+        var current = document.getElementById(windowId);
+        current.style.width = "80%";
+        var inner = current.getElementsByClassName("addStaffInner");
+        inner[0].style.display = "block";
+
+        windows = document.getElementsByClassName("addStaffWindow");
+        for (i = 0; i < windows.length; i++) {
+            if (windows[i].id != windowId) {
+                document.getElementById(windows[i].id).style.width = "0%";
+                everyInner = windows[i].getElementsByClassName("addStaffInner");
+                everyInner[0].style.display = "none";
+
+            }
+        }
+    }
+
+
+    function windowCloser(windowId) {
+        var current = document.getElementById(windowId);
+        var inner = current.getElementsByClassName("addStaffInner");
+        inner[0].style.display = "none";
+        current.style.width = "0%"
+    }
 </script>
 <script>
     function openInfo(evt, info) {
@@ -1103,5 +1154,56 @@
         document.getElementById("OtherDetails").style.display = "block";
     });
 </script> -->
+
+<script>
+    var main = document.getElementById("AppointmentleftBigBox");
+    var inside = main.getElementsByClassName("AppointmentContentBox");
+    for (var i = 0; i < inside.length; i++) {
+        inside[i].addEventListener("click", function() {
+            var currentActive = document.getElementsByClassName("activated");
+            for (var x = 0; x < currentActive.length; x++) {
+                console.log("Current val ", x, currentActive[x]);
+            }
+
+            if (currentActive.length > 0) {
+                currentActive[0].className = currentActive[0].className.replace(" activated", "");
+            }
+
+            this.className += " activated";
+            var mostinner = this.getElementsByTagName("p");
+            for (var j = 0; j < mostinner.length; j++) {
+                document.getElementById("patName").value = mostinner[0].id;
+                document.getElementById("patId").value = mostinner[1].id;
+
+            }
+        });
+    }
+
+    function searchFunction() {
+        // Declare variables 
+        var input, filter, outsideBox, insideDiv, p, i, txtValue;
+        input = document.getElementById("searchBar");
+        filter = input.value.toUpperCase(); //get serached value and turn to upper case
+
+        outsideBox = document.getElementById("AppointmentleftBigBox");
+        insideDiv = outsideBox.getElementsByClassName("AppointmentContentBox"); //since tr is tage takes getelemnet by tag
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < insideDiv.length; i++) {
+            p = insideDiv[i].getElementsByTagName("p")[0];
+            if (p) {
+                txtValue = p.textContent || p.innerText; //innerText is function of html
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    insideDiv[i].style.display = "";
+                } else {
+                    insideDiv[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+<script>
+</script>
 
 </html>

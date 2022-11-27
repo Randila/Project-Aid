@@ -84,3 +84,15 @@ var closebtn = document.getElementById("closeBtn");
 closebtn.addEventListener("click", function() {
     document.getElementById("sideNavbar").style.width = "0";
 });
+
+
+function windowManager(windowId) {
+    var windows;
+
+    windows = document.getElementsByClassName("addStaffWindow");
+    for (var i = 0; i < windows.length; i++) {
+        if (document.getElementById((windows[i].id) = windowId)) {
+            document.getElementById(windowId).style.width = "80%";
+        }
+    }
+}
