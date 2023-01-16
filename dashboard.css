@@ -710,3 +710,441 @@ body {
     background-color: black;
     border-radius: 5vh;
 }
+
+.BillingLeftBigBox {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5vh;
+    /* border: 1px solid pink; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* background-color: rgb(48, 47, 63, 0.9); */
+}
+
+.BillingContentBox {
+    /* border: 1px solid white; */
+    width: 100%;
+    background-color: #302f3f;
+    height: fit-content;
+    margin: auto;
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+    padding: 1vh;
+    display: block;
+    margin-block-start: 1vh;
+    border-radius: 2vh;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+#myTable {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 95%;
+    margin: auto;
+    /* Full-width */
+    border: none;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable2 {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 95%;
+    margin: auto;
+    /* Full-width */
+    border: none;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable2 th,
+#myTable2 td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+
+/* #myTable th {
+    background-color: #302f3f;
+    color: white
+} */
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #302f3f;
+    color: white;
+}
+
+#myTable tr.row:hover {
+    background-color: blueviolet;
+}
+
+#myTable3 {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 50%;
+    /* Full-width */
+    border: 1px solid coral;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+
+/* DINITHI CSS */
+
+.InventoryleftHolder {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    /* background-color: rgb(48, 47, 63); */
+}
+
+.InventoryleftHolder input {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin-top: 1vh;
+    margin-left: 2vw;
+}
+
+.InventoryRightHolder {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+    position: absolute;
+    top: 0%;
+    right: 0%
+}
+
+.InventoryleftBigBox {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.5vh;
+    /* border: 1px solid pink; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* background-color: rgb(48, 47, 63, 0.9); */
+}
+
+.InventoryContentBox {
+    /* border: 1px solid white; */
+    width: 100%;
+    background-color: #302f3f;
+    height: fit-content;
+    margin: auto;
+    color: white;
+    /* display: flex; */
+    justify-content: center;
+    padding: 1vh;
+    display: block;
+    margin-block-start: 1vh;
+    border-radius: 2vh;
+}
+
+.InventoryContentBox:hover {
+    background-color: black;
+}
+
+.InventoryContentBox p {
+    text-align: left;
+    text-indent: 3vw;
+}
+
+.InventoryInputTable {
+    width: 100%;
+    margin-top: 10vh;
+    /* transform: translate(-50%); */
+    /* display: flex;
+    justify-content: center; */
+    font-weight: bold;
+}
+
+.InventoryInputTable td {
+    padding: 2vh;
+}
+
+.InventoryInputTable input {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.InventoryInputTable input::placeholder {
+    color: #c3cbde;
+}
+
+.InventoryInputTable select {
+    border-radius: 5vh;
+    border: none;
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 80%;
+    margin: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: #b5bfd6;
+}
+
+.InventoryInputTable p {
+    text-align: center;
+}
+
+.InventoryInputTable input[type=submit] {
+    background-color: #4a4b62;
+    color: white;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 2vh;
+}
+
+.InventoryInputTable input[type=submit]:hover {
+    background-color: #302f3f;
+    box-shadow: 0.5vh 1vh 1px rgb(214, 218, 229);
+}
+
+.InventoryContentBox.activated {
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 5vh;
+}
+
+#insideInventory input {
+    border-radius: 5vh;
+    border: 1px solid rgb(129, 129, 129);
+    /* background-color: rgb(213, 214, 219); */
+    outline: none;
+    color: black;
+    text-indent: 2vh;
+    padding: 1vh;
+    width: 60%;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.invenMgrBtnContainer {
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.invenMgrBtnContainer input {
+    padding: 2vh;
+    border-radius: 5vh;
+    width: 15vw;
+    display: inline-block;
+    background-color: #302f3f;
+    color: white;
+}
+
+.invenMgrBtnContainer input:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 2px rgb(171, 174, 183);
+}
+
+#myTable2 input,
+#myTable input {
+    border: none;
+    outline: none;
+    border-radius: 5vh;
+    padding: 1vh;
+    width: 90%;
+}
+
+#myTable input[type=submit] {
+    border: none;
+    background-color: #302f3f;
+    color: white;
+}
+
+#myTable input[type=submit]:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 2px rgb(171, 174, 183);
+}
+
+.innerPrescription {
+    /* border: 1px solid red; */
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contentDivPrescription {
+    /* border: 3px solid pink; */
+    position: relative;
+}
+
+.prescLeft {
+    width: 50%;
+    height: 100%;
+    background-color: #4a4b62;
+    position: relative;
+}
+
+.prescRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    /* position: relative; */
+}
+
+.prescTable {
+    width: 95%;
+    margin: auto;
+    /* margin-top: 3vh; */
+}
+
+.prescTable p {
+    color: white;
+}
+
+.prescTable td,
+th {
+    padding: 2vh;
+    width: 50%;
+}
+
+.prescTable th {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(129, 129, 129, 0.5);
+}
+
+.prescTable input,
+textarea,
+select {
+    width: 95%;
+    padding: 1vh;
+    border: none;
+    border-radius: 5vh;
+    outline: none;
+}
+
+.prescTable input:hover,
+textarea:hover,
+select:hover {
+    box-shadow: 0 0 10px 2px rgb(214, 218, 229);
+    border: 1px solid white;
+}
+
+.prescTable textarea {
+    border-radius: 1vh;
+}
+
+.prescTable input[type=submit] {
+    background-color: #d1c8ff;
+    font-weight: bold;
+}
+
+.prescTable input[type=submit]:hover {
+    border: 1px solid white;
+    background-color: #A695FF;
+    box-shadow: 0 0 10px 2px rgb(214, 218, 229);
+}
+
+.prescTable input[type=reset] {
+    background-color: #F6FFC8;
+    font-weight: bold;
+}
+
+.prescTable input[type=reset]:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 10px 2px rgb(214, 218, 229);
+    background-color: #EEFF95;
+}
+
+.patientCardPresc {
+    width: 90%;
+    height: 90%;
+    background: #b5bfd6;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border-radius: 5vh;
+}
+
+.patientCardPrescTable {
+    width: 90%;
+    margin: auto;
+    margin-top: 40%;
+    background-color: #d1d8e6;
+    border-radius: 4vh;
+}
+
+.patientCardPrescTable td {
+    padding: 2vh;
+    font-weight: bold;
+}
+
+.patientCardPrescTable th {
+    background-color: #F6FFC8;
+    border-radius: 4vh 4vh 0vh 0vh;
+    text-align: center;
+    font-size: larger;
+}
+
+
+/*end dinithi css*/

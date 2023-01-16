@@ -216,7 +216,7 @@
             </div>
 
         </div>
-        <div class="catTwo" style="display: block;" id="Manage Patientdiv">
+        <div class="catTwo" style="display: none;" id="Manage Patientdiv">
             <div class="tileHolder2">
                 <div class="homeTile TileCenter" id="addPatientOpenbtn" onclick="windowManager('addPatientWindowPop')">
                     <p class="TileText">Add Patient</p>
@@ -321,7 +321,7 @@
                 </div>
             </div>
             <div class="staffList" style="display: block;">
-                <table border="1" class="appointmentsTable2">
+                <table border="0" class="appointmentsTable2">
 
                     <tr>
                         <th>
@@ -336,7 +336,7 @@
                         <th></th>
                     </tr>
                 </table>
-                <table border="1" class="appointmentsTable">
+                <table border="0" class="appointmentsTable">
                     <tr>
                         <td style="width: 30%;">
                             <img src="src/userimage.png" alt="" class="patientImg">
@@ -352,7 +352,7 @@
                             <input type="button" value="add prescription"></td>
                     </tr>
                 </table>
-                <table border="1" class="appointmentsTable">
+                <table border="0" class="appointmentsTable">
                     <tr>
                         <td style="width: 30%;">
                             <img src="src/userimage.png" alt="" class="patientImg">
@@ -368,7 +368,7 @@
                             <input type="button" value="add prescription"></td>
                     </tr>
                 </table>
-                <table border="1" class="appointmentsTable">
+                <table border="0" class="appointmentsTable">
                     <tr>
                         <td style="width: 30%;">
                             <img src="src/userimage.png" alt="" class="patientImg">
@@ -633,9 +633,16 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p>Experience</p>
+                                        <p>User Account Type</p>
                                     </td>
-                                    <td> <input type="text" name="txtExperience" autocomplete="on" required></td>
+                                    <td> <select name="" id="">
+                                        <option value="" disabled selected>
+                                           Select the Account Type
+                                        </option>
+                                        <option value="">Medical Staff</option>
+                                        <option value="">Administrator</option>
+                                        
+                                    </select></td>
 
 
                                     <td>Employee Type</td>
@@ -670,8 +677,93 @@
                 </div>
             </div>
         </div>
-        <div class="catTwo" style="display: none;" id="Billingdiv">
-            <p>Bill</p>
+        <div class="catTwo" style="display: block;" id="Billingdiv">
+            <div class="tabContent3">
+                <div class="AppointmentleftHolder">
+                    <input type="text" placeholder="Search by patient name" id="searchBarBilling" onkeyup="searchBilling()">
+                    <div class="BillingLeftBigBox" id="BillingLeftBigBox">
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Randila">Patient Name : Randila</p>
+                            <p id="69">Patient id : 69 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Saveen">Patient Name : Saveen</p>
+                            <p id="420">Patient id : 420 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Dilasha">Patient Name : Dilasha</p>
+                            <p id="300">Patient id : 300 </p>
+                        </div>
+                        <div class="BillingContentBox">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <p id="Dinithi">Patient Name : Dinithi</p>
+                            <p id="299">Patient id : 299 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="AppointmentRightHolder">
+                    <form action="">
+                        <table border="0" class="AppointmentInputTable">
+                            <tr>
+                                <td>
+                                    <input type="text" name="" id="BillingPatId" placeholder="Patient Id">
+                                </td>
+                                <td>
+                                    <input type="text" id="BillingPatName" placeholder="Patient Name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Select a Date :</p>
+                                </td>
+                                <td>
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Room Cost</p>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Staff Charge :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Medication Charge :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Discounts :</p>
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr aria-rowspan="2">
+                                <td colspan="2">
+                                    <input type="submit" name="" id="" value="Generate Bill">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="catTwo" style="display: none;" id="Appointmentsdiv">
             <div class="tileHolder2">
@@ -889,7 +981,50 @@
             </div>
         </div>
         <div class="catTwo" style="display: none;" id="Inventorydiv">
-            <p>Inven</p>
+            <div class="tileHolder2">
+                <!---DINITHI -->
+                <div class="homeTile TileCenter" onclick="windowManager('addInventoryWindowPop')">
+                    <p class="TileText">Order Inventory</p>
+                </div>
+                <!--DINITHI WINDOW-->
+                <div class="addStaffWindow" id="addInventoryWindowPop" style="height:80%; ">
+                    <div class="addStaffInner" id="insideInventory" style="display: none;">
+                        <i class="fa fa-close closebtn" id="addStaffClosebtn" onclick="windowCloser('addInventoryWindowPop')"></i>
+
+
+                        <input type="text" placeholder="Search by Inventory name" id="searchInventoryBar" onkeyup="myFunction()">
+                        <!--<div class="AppointmentleftBigBox" id="AppointmentleftBigBox">
+                                    <div class="AppointmentContentBox">-->
+
+
+
+                        <table id="myTable">
+                            <tr class="header">
+                                <th style="width:20%;">Product Name</th>
+                                <th style="width:20%;">MedID</th>
+                                <th style="width:20%;">Manufacture</th>
+
+                                <th style="width:20%;">Catergory</th>
+
+                                <th style="width:40%;">Availability</th>
+
+                                <th style="width:40%;">Expiry Date</th>
+                            </tr>
+
+
+
+
+                        </table>
+
+
+                        <!---PHP END-->
+
+
+                    </div>
+                </div>
+                <!--DINITHI END WINDOW-->
+                <!--END DINITHI-->
+            </div>
         </div>
         <div class="catTwo" style="display: none;" id="Monthly Reportsdiv">
             <p>Monthly Rep</p>
@@ -1153,7 +1288,54 @@
         }
     }
 </script>
+
 <script>
+    var main = document.getElementById("BillingLeftBigBox");
+    var inside = main.getElementsByClassName("BillingContentBox");
+    for (var i = 0; i < inside.length; i++) {
+        inside[i].addEventListener("click", function() {
+            var currentActive = document.getElementsByClassName("activated");
+            for (var x = 0; x < currentActive.length; x++) {
+                console.log("Current val ", x, currentActive[x]);
+            }
+
+            if (currentActive.length > 0) {
+                currentActive[0].className = currentActive[0].className.replace(" activated", "");
+            }
+
+            this.className += " activated";
+            var mostinner = this.getElementsByTagName("p");
+            for (var j = 0; j < mostinner.length; j++) {
+                document.getElementById("BillingPatName").value = mostinner[0].id;
+                document.getElementById("BillingPatId").value = mostinner[1].id;
+
+            }
+        });
+    }
+
+    function searchBilling() {
+        // Declare variables 
+        var input, filter, outsideBox, insideDiv, p, i, txtValue;
+        input = document.getElementById("searchBarBilling");
+        filter = input.value.toUpperCase(); //get serached value and turn to upper case
+
+        outsideBox = document.getElementById("BillingLeftBigBox");
+        insideDiv = outsideBox.getElementsByClassName("BillingContentBox"); //since tr is tage takes getelemnet by tag
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < insideDiv.length; i++) {
+            p = insideDiv[i].getElementsByTagName("p")[0];
+            if (p) {
+                txtValue = p.textContent || p.innerText; //innerText is function of html
+
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    insideDiv[i].style.display = "";
+                } else {
+                    insideDiv[i].style.display = "none";
+                }
+            }
+        }
+    }
 </script>
 
 </html>
